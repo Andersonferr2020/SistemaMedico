@@ -29,41 +29,38 @@ Oferecer uma plataforma digital para centralizar informações médicas de forma
 
 A estrutura do projeto no servidor segue o padrão:  
 
-/ (raiz do projeto) │ ├── app/ │ ├── init.py │ ├── routes.py │ ├── models.py │ └── templates/ │ ├── index.html │ ├── exames.html │ └── quemsomos.html │ ├── static/ │ ├── css/ │ │ └── index.css │ ├── images/ │ │ ├── icon-logo-19.png │ │ └── outros-logos.png │ └── js/ │ └── main.js │ ├── tests/ │ └── test_app.py │ ├── requirements.txt ├── README.md └── run.py
-
+projeto_integrador/
+├── frontend/
+│   ├── index.html
+│   ├── cadastro.html
+│   ├── login.html
+│   ├── dashboard.html
+│   └── css/
+│       └── styles.css
+├── backend/
+│   ├── app.js
+│   ├── routes/
+│   │   └── api.js
+│   ├── models/
+│   │   └── database.js
+│   └── controllers/
+│       └── userController.js
+├── data/
+│   └── uploads/
+├── scripts/
+│   └── database.sql
+└── README.md
 
 ---
 
 ## 🚀 **Tecnologias Utilizadas**  
 
-- **Backend:** Flask (Python).  
-- **Frontend:** HTML5, CSS3, JavaScript.  
-- **Banco de Dados:** PostgreSQL.  
-- **Design Responsivo:** Compatível com dispositivos móveis e desktop.  
+- **Frontend: HTML, CSS, JavaScript.
+- **Backend: Node.js com Express.js.
+- **Banco de Dados: PostgreSQL.
+- **Servidor Web: Nginx.  
 
 ---
-
-## 🔧 **Instalação e Configuração**  
-
-1️⃣ Clonar o Repositório  
-git clone https://github.com/seu-usuario/sistema-informacoes-medicas.git
-cd sistema-informacoes-medicas
-
-2️⃣ Criar o Ambiente Virtual
-python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
-
-3️⃣ Instalar as Dependências
-pip install -r requirements.txt
-
-4️⃣ Executar o Projeto
-python run.py
-O sistema estará disponível em http://127.0.0.1:5000.
-
-🧪 Testes
-Para executar os testes:
-pytest tests/
 
 🤝 Contribuição
 Contribuições são bem-vindas! Siga os passos abaixo:
